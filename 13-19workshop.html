@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Chatbot</title>
+<script src="https://kit.fontawesome.com/ab66e8c8b5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  .chat-container {
+    max-width: 400px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .chat-messages {
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .input-box {
+    display: flex;
+    margin-top: 10px;
+  }
+  .input-box input {
+    flex: 1;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .input-box button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 40px;
+    
+  }
+
+
+  #chatMessages{
+    background-image: url(https://wallpapers.com/images/featured/whatsapp-3d9aa7qsppakwbww.jpg);
+
+  }
+
+  .message{
+    color: #ccc;
+  }
+
+
+</style>
+</head>
+<body>
+<div class="chat-container">
+  <div class="chat-messages" id="chatMessages">
+    <div class="message incoming">Hello! How can I help you?</div>
+  </div>
+  <div class="input-box">
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button id="sendBtn">Send</button>
+
+    
+  </div>
+</div>
+<script>
+  const chatMessages = document.getElementById('chatMessages');
+  const userInput = document.getElementById('userInput');
+  const sendBtn = document.getElementById('sendBtn');
+
+  sendBtn.addEventListener('click', () => {
+    const userMessage = userInput.value;
+    addMessage(userMessage, 'user');
+    openWhatsApp(userMessage);
+    userInput.value = '';
+  });
+
+  function addMessage(message, sender) {
+    const messageDiv = document.createElement('div');
+    messageDiv.className = `message ${sender}`;
+    messageDiv.textContent = message;
+    chatMessages.appendChild(messageDiv);
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+  }
+
+  function openWhatsApp(message) {
+  
+    const whatsappNumber = '9036033300';
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
+    window.open(whatsappURL, '_blank');
+  }
+</script>
+</body>
+</html>

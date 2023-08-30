@@ -1,0 +1,528 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    /* background-color: #b5e2e8; */
+    background: url("../Images/career/back.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* height: 300vh; */
+}
+
+
+
+.head{
+    text-align: center;
+}
+
+.head img{
+    width:600px;
+}
+.logo_m{
+    width: 40vw;
+}
+
+
+@media screen and (max-width:750px) {
+    .head img{
+        width: 500px;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .head img{
+        width:370px;
+    }
+    
+}
+@media screen and (max-width:430px) {
+    .head img{
+        width:250px;
+    }
+    
+}
+
+.flex-box{
+
+    margin-top: 25px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.left-side img{
+    width: 300px;
+    
+}
+
+
+.right-side{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+   text-align: justify;
+    position: relative;
+}
+
+.right-side h3{
+    /* color: rgb(255, 191, 0); */
+}
+
+.right-side a{
+   
+    position:absolute;
+    right: 10px;
+}
+
+/* ******************* form ************************* */
+
+.form{
+    background-color: #2484aa;
+    margin: auto;
+    width: 480px;
+    border-radius: 13px;
+    position: relative;
+}
+
+form{
+  
+    /* padding-left: 80px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+   
+    
+}
+
+form hr{
+    width: 70%;
+    margin: auto;
+}
+.element{
+    margin-top: 14px;
+   /* margin-left: 30px; */
+   /* padding-left: 70px; */
+   
+}
+
+.form h3{
+    text-align: center;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+label{
+    width: 90px;
+    font-size: 1.1rem;
+}
+
+#resume-label{
+    width: 90px;
+}
+
+input{
+    border-radius: 8px;
+    border: none;
+    font-size: 1.1rem;
+    background-color: rgb(207, 238, 251);
+    padding:4px 10px;
+
+}
+
+input[type ="file"]{
+    /* background-color: rgb(138, 206, 233) !important; */
+    font-size: 15px !important;
+    /* margin-left: 20px; */
+    width: 220px;
+    color: black;
+    padding: auto !important;
+
+}
+
+.button{
+   text-align: center;
+}
+.form button{
+    margin-left: 10px !important;
+    margin-top: 10px;
+    
+}
+
+.element small{
+    display: block;
+    margin-left: 100px;
+}
+
+ul{
+    margin-bottom: 5px !important;
+}
+.mt{
+    margin-top:50px;
+}
+
+.stars{
+    text-align: center;
+}
+.star-yellow{
+    margin-top: 10px;
+    width: 40px;
+}
+
+.red{
+    position: absolute;
+    top: 980px;
+    left: 50px;
+}
+
+.red img{
+    width: 50px;
+}
+   
+
+@media screen and (max-width:1280px) {
+    .right-side {
+        margin-left: 50px;
+    }
+    
+}
+
+@media screen and (max-width:1280px) {
+    .right-side {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .right-side{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .form{
+        width: 70vw;
+    }
+}
+
+.image-button {
+    width: 180px;
+    height: 50px;
+    background-image: url("../Images/career/sub.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: #2484aa;
+  }
+  
+  .redflower{
+    position: absolute;
+    top: 1580px;
+    left: 340px;
+    width: 50px;
+    animation: spin 2s linear infinite;
+  }
+
+  .purpleflower{
+    position: absolute;
+    top: 1900px;
+    right: 300px;
+    width: 50px;
+    animation: spin 2s linear infinite;
+
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .logo{
+    margin-left: 100px;
+    margin-top: 30px;
+  }
+
+  .demo{
+    background: url("../Images/adda/back.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 50px;
+    padding-bottom: 70px;
+  }
+  .dfh{
+    justify-content:center;
+    /* height: 300vh; */
+  }
+  .box{
+    display: flex;
+    margin-right: 100px;
+   
+  }
+
+  .join h1{
+    font-size: 3rem;
+    color: skyblue;
+  }
+  .round img{
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+
+  }
+
+  .round{
+    margin-right: 20px;
+  }
+
+  .video video{
+    width: 300px;
+    border-radius: 15px;
+    background-color: #2484aa;
+  }
+
+/* .video-up video{
+    width: 70vw;
+}
+
+.first-img img{
+    display: block;
+    width: 400px;
+}
+
+.second-img{
+    width: 700px;
+} */
+
+
+
+  /* Additional Styles for the Image Gallery */
+
+  .gallery-container{
+    position: relative;
+  }
+li{
+    display: inline;
+}
+
+li img{
+    border-radius: 10px;
+    margin: 10px;
+}
+  
+.redflower2{
+    position: absolute;
+    top: 0px;
+    left: 340px;
+    width: 50px;
+    /* animation: spin 2s linear infinite; */
+  }
+
+  .purpleflower2{
+    position: absolute;
+    top: 0px;
+    right: 300px;
+    width: 50px;
+    /* animation: spin 2s linear infinite; */
+
+  }
+
+  .demo{
+    position: relative;
+  }
+
+  .redflower3{
+    position: absolute;
+    top: 63vh;
+    left: 300px;
+    width: 50px;
+    animation: spin 2s linear infinite;
+  }
+
+  .purpleflower3{
+    position: absolute;
+    top: 63vh;
+    right: 400px;
+    width: 50px;
+    animation: spin 2s linear infinite;
+
+  }
+ 
+
+  /* Mobile and Tablet Styles */
+@media screen and (max-width: 940px) {
+    .head img {
+        width: 80%; /* Adjust the image width as needed */
+    }
+
+    .right-side {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .left-side img {
+        width: 80%; /* Adjust the image width as needed */
+    }
+
+    .right-side {
+        margin: 0;
+        padding: 0 15px;
+    }
+
+    .form {
+        width: 90vw;
+    }
+
+    .form button {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .element small {
+        margin-left: 0;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+    }
+
+    .round img {
+        width: 100px; /* Adjust the image width as needed */
+    }
+
+    .video video {
+        width: 100%;
+    }
+
+    .join h1 {
+        font-size: 2rem; /* Adjust the font size as needed */
+    }
+
+    
+}
+
+/* Additional Styles for responsiveness */
+@media screen and (max-width: 550px) {
+    .flex-box {
+        flex-direction: column;
+    }
+    
+    .right-side, .left-side {
+        margin: 0;
+    }
+    
+    .box {
+        margin: 20px auto;
+    }
+    
+    .redflower2, .purpleflower2 {
+        display: none;
+    }
+    
+    .demo {
+        padding: 20px;
+    }
+    
+    .redflower3, .purpleflower3 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1000px) {
+    .li img_2{
+        width: 60vw !important;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+.li img{
+    width: 60vw !important;
+}
+}
+
+@media screen and (max-width: 785px) {
+    .li img{
+        width: 60vw !important;
+    }
+    .img_8{
+        width: 60vw !important;
+    }
+    .img_1{
+        width: 60vw !important;
+    }
+    .img_3{
+        width: 60vw !important;
+    }
+    .img_4{
+        width: 60vw !important;
+    }
+    .img_5{
+        width: 60vw !important;
+    }
+    .img_6{
+        width: 60vw !important;
+    }
+    .img_7{
+        width: 60vw !important;
+    }
+    .img_9{
+        width: 60vw !important;
+    }
+    .img_0{
+       
+            width: 60vw !important;
+        
+    }
+    .img_2{
+        width: 60vw !important;
+    }
+    }
+
+    @media screen and (max-width: 700px) {
+        .li img{
+            width: 60vw !important;
+        }
+        }
+
+
+        /* @media screen and (max-width: 374px) {
+           .logo_m{
+            width: 30vw !important;
+           }
+        } */
+
+
+        .content {
+            padding: 20px;
+          }
+          .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            border: none;
+            border-radius: 50%;
+            padding: 10px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          }
+          .whatsapp-button i {
+            color: white;
+          }
